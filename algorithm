@@ -1,0 +1,32 @@
+Game:
+    Fibonacci Nim is played by two players, who alternate removing coins or other counters
+from a pile of coins. On the first move, a player is not allowed to take all of the coins, and on
+each subsequent move, the number of coins removed can be any number that is at most twice
+the previous move. The player who takes the last coin wins. The pile of coins to starts the
+game with is chosen arbitrarily.
+
+
+
+# Rules:
+    - In the first first game player isn't allowed to take all coins from one
+    ( at least one coin but not all )
+
+    - Following player takes any number of the remaining coins but
+        but no more than double of the last withdraw
+        ( at least one but not more than double of the last withdraw )
+
+    - the player taking the last coin is the winner
+
+
+# algorithm
+1- Decide on data structure(s) to store game status
+2- Display initial game status
+3- While (True)
+a. First player plays
+b. Update game status (internally and displayed to users)
+c. If someone wins, declare winner and end game
+d. else if game is over, declare draw and end game
+e. Second player plays
+f. Update game status (internally and displayed to users)
+g. If someone wins, declare winner and end game
+h. else if game is over, declare draw and end game
